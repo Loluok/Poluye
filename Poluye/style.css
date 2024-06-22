@@ -1,0 +1,210 @@
+/* Declarar variables */
+
+/* Es importante tener una paleta de color  */
+/* tambien que los textos sean legibles */
+/* Yo agarre la primera que vi en internet */
+:root{
+    --background-color: #552c2c;
+
+    /* Caso de uso recomendado con rgb */
+    /* --text-color-titulos: 197, 220, 239; */
+    /* Con rgb rgb(var(--text-color-principal));  */
+
+   --section-background-color: #d78080;
+    --text-color-titulos: #fafafa;
+    --text-color: #d78080;
+    font-size: 16px; /*Tamaño de los elementos de la pagina, por resumirlo asi*/
+}
+
+
+
+/* Los navegadores tienen distintos valores, por eso es mejor dejarlos en 0 */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(-45deg, var(--background-color), rgb(0, 0, 0));
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+/* Tamaño de titulos */
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--text-color-titulos);
+    font-size: 1.25rem;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+h2{
+    font-size: 1.75rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+p, span{
+    font-size: 1rem;
+    color: white;
+}
+
+.center{
+    margin: auto;
+    text-align: center;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.amorpropio {
+    width: 90%;
+    margin: auto;
+ }
+ 
+
+/* Para que los elementos no queden pegados a los bordes */
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* Header */
+.header-main{
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Cuerpo principal */
+/* Index */
+article.contact{
+    margin: 1rem 0;
+}
+
+article.contact .title{
+    border-radius: 15px 15px 0 0;
+    background: var(--section-background-color);
+    border-bottom: 1px solid var(--text-color);
+    padding: 0.5rem;
+}
+
+article.contact .body{
+    border-radius: 0 0 5px 5px;
+    background: var(--text-color-titulos);
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+article.contact .body span{
+    font-weight: 600;
+    color: #000000;
+}
+
+article.contact .body p,
+article.contact .body a{
+    color: var(--section-background-color);
+    font-weight: 600;
+}
+
+
+/* Estilizar fontasome */
+
+.fa-brands.fa-spotify{
+    font-size: 1.5rem;
+    color: #1DB954 !important;
+}
+
+ul, ol{
+    color:#fafafa;
+    list-style:none;
+}
+
+.footer-container{
+    color:#d78080;
+    font-size: 12px;
+   
+}
+
+a{
+ color:#d78080;
+}
+
+
+/* LO SIGUIENTE ES PARA EL FOOTER */
+
+.pie-pagina{
+    width: 100;
+    background-color: #250b14;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto; /* margen a cada lado */
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* repite 3 columnas y ocupa todo el ancho */
+    grid-gap: 50px;
+    padding:45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex; /* para q sea flexible */
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 125px;
+}
+
+.pie-pagina .grupo-1 .redes-sociales a{
+    display:inline-block;
+    text-decoration: none;
+    width: 10%;
+    height: 30px;
+    line-height: 30px;
+    color:#FFF;
+    margin-right: 10px;
+    background-color:#441425;
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .redes-sociales a:hover{
+    color:#d78080
+}
+
+.pie-pagina .grupo-2{
+    background-color: #441425;
+    padding: 15px 10px;
+    text-align: center;
+    color:#FFF
+}
+
+.pie-pagina .grupo-2 small{
+    font: size 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr); /* repite 3 columnas y ocupa todo el ancho */
+        grid-gap: 50px;
+        padding:45px 0px;
+    }
+    
+}
+
+
+/* CAMBIAR COLOR DE TEXTO DEL FOOTER PQ SE PUSO BLANCO   color: #441425; */
