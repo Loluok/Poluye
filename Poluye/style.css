@@ -1,8 +1,4 @@
-/* Declarar variables */
 
-/* Es importante tener una paleta de color  */
-/* tambien que los textos sean legibles */
-/* Yo agarre la primera que vi en internet */
 :root{
     --background-color: #552c2c;
 
@@ -69,6 +65,10 @@ p, span{
     margin: auto;
  }
  
+ .letracancion {
+    width: 100%;
+    text-align: center;
+ }
 
 /* Para que los elementos no queden pegados a los bordes */
 .container{
